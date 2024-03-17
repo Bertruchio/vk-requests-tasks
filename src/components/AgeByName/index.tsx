@@ -32,6 +32,11 @@ const AgeByName: React.FC = () => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
+    if (!/^[a-zA-Z]+$/.test(name)) {
+      setError("Name must contain only letters.");
+      return;
+    }
+
     if (cancelToken) {
       cancelToken.cancel("Request canceled by the user");
     }
