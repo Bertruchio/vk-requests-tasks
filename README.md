@@ -5,13 +5,13 @@
 ## Инструкции по запуску
 1. Клонирование репозитория:
 ```bash
-$ git clone <URL репозитория>
+$ git clone https://github.com/Bertruchio/vk-requests-tasks.git
 ```
 2. Установка зависимостей:
 ```bash
 $ npm install
 ```
-3. Установка зависимостей:
+3. Запуск приложения:
 ```bash
 $ npm run dev
 ```
